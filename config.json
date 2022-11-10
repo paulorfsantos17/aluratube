@@ -1,0 +1,30 @@
+{
+  "name": "Paulo Santos",
+  "job" : "Lead Software",
+  "avatarUrl": "https://avatars.githubusercontent.com/u/42043880?v=4",
+  "banner": "https://2.bp.blogspot.com/-lHzIMGxQxS8/VfeMCaSzIAI/AAAAAAAAOq8/zTYuj4QEDl4/s640/BANNER.jpg",
+  "playlist" : {
+    "jogos": [
+      {
+        "title": "ULT DA AHRI TA MUITO ROUBADA! LOL WILD RIFT",
+        "url" : "https://youtu.be/fvReiG9Tf7c",
+        "thumbnail": "https://img.youtube.com/vi/fvReiG9Tf7c/maxresdefault.jpg"
+
+      },
+      {
+        "title": "UMA PARTIDA DE ALTO NÍVEL NO CHALLENGER - WILD RIFT",
+        "url" : "https://youtu.be/95pwZboqKnM",
+        "thumbnail": "https://img.youtube.com/vi/95pwZboqKnM/maxresdefault.jpg"
+
+      }
+    ],
+    "front-end": [
+      {
+        "title": "PROGRAMADOR FRONT-END: Tudo para você começar! | PRIMOTECH EP 5",
+        "url" : "https://youtu.be/wmM1Y0FTiz8",
+        "thumbnail": "https://img.youtube.com/vi/wmM1Y0FTiz8/maxresdefault.jpg"
+      }
+    ]
+  }
+
+}
