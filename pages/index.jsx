@@ -4,16 +4,18 @@ import { Timeline } from "/src/components/timeline/Timeline";
 
 import config from "../config.json";
 import { CSSReset } from "../src/components/CssReset/CssReset";
+import { useState } from "react";
 
 function HomePage(props) {
+  const [search, setSearch] = useState("");
   return (
     <>
       <CSSReset />
       <div>
-        <Menu />
+        <Menu serach={search} setSearch={setSearch} />
         <Header />
 
-        <Timeline playlist={config.playlist} />
+        <Timeline playlist={config.playlist} searchTitle={search} />
       </div>
     </>
   );

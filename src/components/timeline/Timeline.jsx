@@ -49,19 +49,25 @@ export const StyledTimeline = styled.div`
 
 export function Timeline(props) {
   const playlistNames = Object.keys(props.playlist);
+  
 
   return (
     <StyledTimeline>
       {playlistNames.map((playlistName) => {
         const videos = props.playlist[playlistName];
         return (
-          <section>
+          <section key={playlistName}>
             <h2>{playlistName} </h2>
             <div>
-              {videos.map((video) => {
-                console.log(video);
+              {
+              videos.filter(video => {
+                const titleNormalize = video.title.toLowerCase()
+                const setTitleNormalize = props.searchTitle.toLowerCase() 
+                return titleNormalize.includes(setTitleNormalize)
+              })
+              .map((video) => {
                 return (
-                  <a href={video.url}>
+                  <a key={video.url} href={video.url}>
                     <img src={video.thumbnail} alt={video.title} />
                     <span>{video.title}</span>
                   </a>

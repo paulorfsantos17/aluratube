@@ -16,10 +16,19 @@ const StyledHeader = styled.div`
   }
 `;
 
+const StyledBanner = styled.div`
+  /* background-image: url(${config.banner}); */
+  background-image: url(${({ bg }) => bg});
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;
+  width: 100%;
+`;
+
 export function Header() {
   return (
     <StyledHeader>
-      <img src={config.banner} alt="banner" />
+      <StyledBanner bg={config.banner} />
       <section className="user-info">
         <img src={config.avatarUrl} alt="perfil" />
         <div>
