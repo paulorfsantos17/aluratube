@@ -5,7 +5,7 @@ export const StyledTimeline = styled.div`
   flex: 1;
   width: 100%;
   padding: 16px;
-  overflow: hidden;
+  overflow: hidden ;
   h2 {
     font-size: 16px;
     margin-bottom: 16px;
@@ -32,7 +32,7 @@ export const StyledTimeline = styled.div`
       grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
       grid-auto-flow: column;
       grid-auto-columns: minmax(200px,1fr);
-      overflow-x: scroll;
+      overflow: hidden;
       scroll-snap-type: x mandatory;
       a {
         scroll-snap-align: start;
@@ -68,7 +68,7 @@ export function Timeline(props) {
               .map((video) => {
                 return (
                   <a key={video.url} href={video.url}>
-                    <img src={video.thumbnail} alt={video.title} />
+                    <img src={video.thumb} alt={video.title} />
                     <span>{video.title}</span>
                   </a>
                 );

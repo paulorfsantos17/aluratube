@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Search } from "../Search/Search";
+import SwitchMode from "../SwitchMode/SwitchMode";
 
 const StyledMenu = styled.header`
   display: flex;
@@ -32,6 +33,7 @@ export  function Menu({search, setSearch}) {
         <Logo />
       </div>
       <Search  search={search} setSearch={setSearch}/>
+      <SwitchMode />
     </StyledMenu>
   );
 }
